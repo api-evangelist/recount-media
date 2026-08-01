@@ -1,8 +1,27 @@
 aid: recount-media
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/recount-media.png
 name: Recount Media
-description: Recount Media is a company surfaced as a portfolio company of union-square-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Recount Media operates The Recount, a political news and media outlet that
+  distributes government and political coverage across social platforms
+  (TikTok, Instagram, YouTube, Snapchat, and X) plus the "Who Broke It"
+  newsletter on Substack, under the tagline "More signal, less noise, and zero
+  spin." It was surfaced as a portfolio company of Union Square Ventures and
+  added to the API Evangelist network. As a consumer media brand it publishes
+  no public developer platform, API, or specification surface; this profile
+  captures its identity and the domain-security posture probed from its live
+  website.
 url: https://raw.githubusercontent.com/api-evangelist/recount-media/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Media
+- News
+- Politics
+- Journalism
+- Video
+- Newsletter
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/recount-media-domain-security.yml
 - type: Website
   url: https://therecount.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
